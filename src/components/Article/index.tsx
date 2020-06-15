@@ -1,22 +1,29 @@
-import React, { useState } from 'react';
-import { Article, Label, Title, Text } from './styles';
-import LogoImg from '../../midia/charmander.png';
+import React from 'react';
+import { Article, Label, Title, Type } from './styles';
 
-interface RepositoryPokemon {
-  LabelText: number;
+interface PokemonProps {
+  LabelText: string;
   TitleText: string;
+  PokeImg: string;
+  PokeType: string;
 }
 
-const PokeArticle: React.FC = () => {
-  const [RepositoryPokemon] = useState<RepositoryPokemon | null>(null);
-
+const PokeArticle: React.FC<PokemonProps> = ({
+  LabelText,
+  TitleText,
+  PokeImg,
+  PokeType,
+}) => {
   return (
     <>
       <Article>
-        <img src={LogoImg} width="216px" height="180px" alt="" />
+        <img src={PokeImg} width="216px" height="180px" alt="" />
         <div>
-          <Label>{RepositoryPokemon.LabelText}</Label>
-          <Title>{RepositoryPokemon.TitleText} </Title>
+          <Label>{LabelText}</Label>
+          <Title>{TitleText} </Title>
+        </div>
+        <div>
+          <Type>{PokeType}</Type>
         </div>
       </Article>
     </>

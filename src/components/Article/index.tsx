@@ -5,6 +5,7 @@ interface PokemonProps {
   LabelText: string;
   TitleText: string;
   PokeImg: string;
+  TypeColor: string;
   PokeType: string;
 }
 
@@ -13,6 +14,7 @@ const PokeArticle: React.FC<PokemonProps> = ({
   TitleText,
   PokeImg,
   PokeType,
+  TypeColor,
 }) => {
   return (
     <>
@@ -23,7 +25,7 @@ const PokeArticle: React.FC<PokemonProps> = ({
           <Title>{TitleText} </Title>
         </div>
         <div>
-          <Type>{PokeType}</Type>
+          <Type backgroundColor={TypeColor}>{PokeType}</Type>
         </div>
       </Article>
     </>

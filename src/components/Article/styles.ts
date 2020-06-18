@@ -24,6 +24,14 @@ export const Text = styled.p`
   color: black;
 `;
 
+interface TypeProps {
+  backgroundColor: string;
+}
+
+const getBackgroundColor = ({ backgroundColor }: TypeProps) => {
+  return backgroundColor || 'red';
+};
+
 export const Type = styled.span`
   display: flex;
   justify-content: center;
@@ -35,4 +43,5 @@ export const Type = styled.span`
   width: 40%;
   text-transform: none;
   font-size: 0.8em;
+  background-color: ${getBackgroundColor};
 `;

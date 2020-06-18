@@ -9,7 +9,7 @@ export const Main = styled.main`
   margin-top: 15px;
 `;
 
-export const SmallNewsContainer = styled.div`
+export const Row = styled.div`
   display: flex;
   justify-content: space-between;
 `;

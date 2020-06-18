@@ -2,7 +2,7 @@ import React from 'react';
 import Header from './components/header/index';
 import GlobalStyle from './styles/global';
 import PokeArticle from './components/Article/index';
-import { Container, Main, SmallNewsContainer } from './styles';
+import { Container, Main, Row } from './styles';
 
 const App: React.FC = () => {
   return (
@@ -11,12 +11,13 @@ const App: React.FC = () => {
 
       <Main>
         <Container>
-          <SmallNewsContainer>
+          <Row>
             <PokeArticle
               LabelText="N°001"
               TitleText="Bulbasaur"
               PokeImg={require('./midia/001.png')}
               PokeType="Grass"
+              TypeColor="green"
             />
 
             <PokeArticle
@@ -24,6 +25,7 @@ const App: React.FC = () => {
               TitleText="Ivysaur"
               PokeImg={require('./midia/002.png')}
               PokeType="Grass"
+              TypeColor="green"
             />
 
             <PokeArticle
@@ -31,6 +33,7 @@ const App: React.FC = () => {
               TitleText="Venosaur"
               PokeImg={require('./midia/003.png')}
               PokeType="Grass"
+              TypeColor="green"
             />
 
             <PokeArticle
@@ -38,17 +41,19 @@ const App: React.FC = () => {
               TitleText="Charmander"
               PokeImg={require('./midia/004.png')}
               PokeType="Fire"
+              TypeColor="red"
             />
-          </SmallNewsContainer>
+          </Row>
         </Container>
 
         <Container>
-          <SmallNewsContainer>
+          <Row>
             <PokeArticle
               LabelText="N°005"
               TitleText="Charmeleon"
               PokeImg={require('./midia/005.png')}
               PokeType="Fire"
+              TypeColor="red"
             />
 
             <PokeArticle
@@ -56,22 +61,25 @@ const App: React.FC = () => {
               TitleText="Charizard"
               PokeImg={require('./midia/006.png')}
               PokeType="Fire"
+              TypeColor="red"
             />
 
             <PokeArticle
               LabelText="N°007"
               TitleText="Squirtle"
               PokeImg={require('./midia/007.png')}
-              PokeType="water"
+              PokeType="Water"
+              TypeColor="blue"
             />
 
             <PokeArticle
               LabelText="N°008"
               TitleText="Wartortle"
               PokeImg={require('./midia/008.png')}
-              PokeType="water"
+              PokeType="Water"
+              TypeColor="blue"
             />
-          </SmallNewsContainer>
+          </Row>
         </Container>
       </Main>
 

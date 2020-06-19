@@ -1,12 +1,12 @@
 import React from 'react';
-import { Article, Label, Title, Type } from './styles';
+import { Article, Label, Title } from './styles';
+import { LabelType } from './LabelType';
 
 interface PokemonProps {
   LabelText: string;
   TitleText: string;
   PokeImg: string;
-  TypeColor: string;
-  PokeType: string;
+  PokeType: Array<any>;
 }
 
 const PokeArticle: React.FC<PokemonProps> = ({
@@ -14,7 +14,6 @@ const PokeArticle: React.FC<PokemonProps> = ({
   TitleText,
   PokeImg,
   PokeType,
-  TypeColor,
 }) => {
   return (
     <>
@@ -24,9 +23,9 @@ const PokeArticle: React.FC<PokemonProps> = ({
           <Label>{LabelText}</Label>
           <Title>{TitleText} </Title>
         </div>
-        <div>
-          <Type backgroundColor={TypeColor}>{PokeType}</Type>
-        </div>
+        {PokeType.map((item) => {
+          return <LabelType type={item} />;
+        })}
       </Article>
     </>
   );

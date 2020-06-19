@@ -23,25 +23,3 @@ export const Text = styled.p`
   line-height: 17px;
   color: black;
 `;
-
-interface TypeProps {
-  backgroundColor: string;
-}
-
-const getBackgroundColor = ({ backgroundColor }: TypeProps) => {
-  return backgroundColor || 'red';
-};
-
-export const Type = styled.span`
-  display: flex;
-  justify-content: center;
-  background: green;
-  border-radius: 5px;
-  max-width: 100px;
-  margin-right: 2px;
-  margin-top: 5px;
-  width: 40%;
-  text-transform: none;
-  font-size: 0.8em;
-  background-color: ${getBackgroundColor};
-`;

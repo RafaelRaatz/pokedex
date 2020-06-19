@@ -6,7 +6,7 @@ export const Container = styled.div`
 `;
 
 export const Main = styled.main`
-  margin-top: 15px;
+  background-color: #1c1c1c;
 `;
 
 export const Row = styled.div`

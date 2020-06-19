@@ -13,6 +13,7 @@ export default createGlobalStyle`
     background: white;
     font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
+  background-color:#1c1c1c;
   }
 
   a{

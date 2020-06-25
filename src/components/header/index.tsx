@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container } from './styles';
-import LogoImg from '../../midia/pokedex.png';
+import LogoImg from '../../media/pokedex.png';
 
 const Header: React.FC = () => {
   return (

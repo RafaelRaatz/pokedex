@@ -1,19 +1,25 @@
 {
-  "posts": [
+  "pokemons": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
+      "number": "001",
+      "name": "Bulbasaur",
+      "image": "./src/media/001.png",
+      "type": ["Grass", "Poison"]
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "id": 2,
+      "number": "002",
+      "name": "Bulbasaur",
+      "image": "./media/002.png",
+      "type": ["Grass", "Poison"]
+    },
+    {
+      "id": 3,
+      "number": "003",
+      "name": "Bulbasaur",
+      "image": "./media/003.png",
+      "type": ["Grass", "Poison"]
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }

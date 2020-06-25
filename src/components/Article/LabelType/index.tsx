@@ -18,7 +18,6 @@ const getBackgroundColor = ({ type }: TypeProps) => {
 };
 
 export const TypeBox = styled.span`
-  float: left;
   display: flex;
   justify-content: center;
   border-radius: 5px;
